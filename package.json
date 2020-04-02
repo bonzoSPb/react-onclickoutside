@@ -37,7 +37,6 @@
     "test:basic": "run-s lint build",
     "test:karma": "karma start test/karma.conf.js --single-run",
     "test:nodom": "mocha test/no-dom-test.js",
-    "precommit": "npm test && lint-staged",
     "prepare": "npm run build",
     "prerelease": "npm run test",
     "release:patch": "npm run prerelease && npm version patch && npm publish && git push --follow-tags",
